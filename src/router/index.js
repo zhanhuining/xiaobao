@@ -1,23 +1,71 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
-import HomeView from '../views/HomeView.vue'
 
 Vue.use(VueRouter)
 
 const routes = [
   {
     path: '/',
-    name: 'home',
-    component: HomeView
-  },
-  {
-    path: '/about',
     name: 'about',
-    // route level code-splitting
-    // this generates a separate chunk (about.[hash].js) for this route
-    // which is lazy-loaded when the route is visited.
-    component: () => import(/* webpackChunkName: "about" */ '../views/AboutView.vue')
-  }
+    component: () => import(/* webpackChunkName: "about" */ '../views/AboutView.vue'),
+    children:[
+      {  //整改处理  明细首页
+        path: '/dispose',  
+        name: 'dispose',
+        component: () => import(/* webpackChunkName: "dispose" */ '../views/Dispose/index.vue')
+      },
+      { //整改处理  明细
+        path: '/disposelist',
+        name: 'disposelist',
+        component: () => import(/* webpackChunkName: "dispose" */ '../views/Dispose/Dispose.vue')
+      },
+      {
+        path: '/rectTaskRelease',
+        name: 'rectTaskRelease',
+        component: () => import(/* webpackChunkName: "rectTaskRelease" */ '../views/TaskAnnouncement/RectTaskRelease.vue')
+      },
+      {
+        path: '/lookTask',
+        name: 'lookTask',
+        component: () => import(/* webpackChunkName: "lookTask" */ '../views/TaskAnnouncement/lookTask.vue')
+      },{
+        path: '/addRectTask',
+        name: 'addRectTask',
+        component: () => import(/* webpackChunkName: "addRectTask" */ '../views/TaskAnnouncement/addRectTask.vue')
+      },
+      {
+        path: '/tasklist',
+        name: 'tasklist',
+        component: () => import(/* webpackChunkName: "tasklist" */ '../views/Audit/Tasklist.vue')
+      },
+      {
+        path: '/duditlist',
+        name: 'duditlist',
+        component: () => import(/* webpackChunkName: "duditlist" */ '../views/Dudit/Duditlist.vue') 
+      },
+      {
+        path: '/duditTwo',
+        name: 'duditTwo',
+        component: () => import(/* webpackChunkName: "duditTwo" */ '../views/Dudit/DuditTwo.vue') 
+      },
+      {
+         path: "/taskOne", 
+         name: 'taskOne', 
+         component: () => import(/* webpackChunkName: "taskOne" */ '../views/Taskrectification/TaskOne.vue')
+      },
+      { 
+        path: "/taskTwo", 
+        name: 'taskTwo',
+        component: () => import(/* webpackChunkName: "taskTwo" */ '../views/Audit/TaskTwo.vue') 
+      },
+      { 
+        path: "/taskDetail",
+        name: 'taskDetail',
+        component: () => import(/* webpackChunkName: "taskDetail" */ '../views/Taskrectification/TaskDetail.vue') 
+      },
+    ]
+  },
+  
 ]
 
 const router = new VueRouter({

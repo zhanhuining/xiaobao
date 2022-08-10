@@ -1,0 +1,272 @@
+/* 上传按钮 */
+.up{  
+    display: flex;
+   
+} 
+.up .one{
+    margin-right: 20px;
+  }
+tr .el-table__cell div {
+    text-align: center;
+}
+/* 表格的位置 */
+.el-table{
+    background: #6e96e9;
+    border-radius: 4px 4px 0px 0px;
+    margin: 0 0 20px 38px;
+}
+.el-table #van-a {
+    /* 处理样式 */
+    cursor: pointer; 
+    /* 鼠标变为手 */
+    color: #53d059;
+    display: flex;
+    }
+.el-table #van-a .el-icon-edit-outline {
+    font-size: 18px;
+    margin: 18px 9px 0 4px;
+  }
+.el-table #van-a .span_chu{
+    width: 32px;
+    height: 17px;
+    font-size: 16px;
+    font-family: Source Han Sans CN;
+    font-weight: 400;
+    text-decoration: underline;
+    color: #22c82d;
+  }
+.el-table .wen{
+    color: #22c82d;
+    }
+.el-table .warning-row {
+    background: #f0f4fd;
+}
+/* 第一行  整改处理样式 */
+.shu {
+    line-height: 17px;
+    width: 89px;
+    font-weight: 700;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 30px;
+    margin-top: 60px;
+    margin-bottom: 29px;
+}
+.shu p {
+    width: 73px;
+    height: 17px;
+    line-height: 17px;
+    font-family: Source Han Sans CN;
+    margin: 0;
+  }
+.shu div {
+    width: 4px;
+    height: 16px;
+    background: #6e96e9;
+  }
+p {
+color: #333333;
+font-weight: 400;
+font-size: 18px;
+}
+ /* 二级 处理按钮 */
+.er{
+width: 1300px;
+height: 36px;
+display: flex;
+align-items: center;
+margin-left: 45px;
+margin-bottom: 31px;
+
+
+}
+.er p{
+    width: 90px;
+    height: 18px;
+    font-family: Source Han Sans CN;
+  }
+.er #el-row {
+    font-size: 16px;
+  
+  }
+.er #el-row #el-form {
+    /* //表单的弹性布局  三个框的样式 */
+    margin: 5px 14px 0 -50px;
+    display: flex;
+
+  }
+.er #el-row #el-form #el-form-item{
+    margin: 0;
+
+  }
+.er #el-row #el-form #el-form-item .el-form-item__label {
+    font-size: 16px;
+    font-family: Source Han Sans CN;
+    font-weight: 400;
+    color: #333333;
+  }
+.el-col-c {
+    /* 多选框和输入框的css样式 */
+    width: 243px;
+    /* height: 36px;
+    border: 1px solid #d7d7d7; */
+    border-radius: 4px;
+}
+
+
+ /* 查询按钮样式 */
+#van-button1{
+   cursor: pointer; 
+   /*  鼠标变为手 */
+   display: flex;
+   justify-content: space-around;
+   align-items: center;
+   width: 80px;
+   height: 36px;
+   background: #6e96e9;
+   border-radius: 4px;
+   color: #ffffff;
+   margin-top: 5px;
+}
+#van-button1 .el-icon-search{
+    margin: 2px 4px 0 12px;
+    width: 20px;
+    height: 20px;
+}
+#van-button1 p{
+    font-size: 13px;
+    font-family: Source Han Sans CN;
+    font-weight: 400;
+    color: #ffffff;
+}
+// 
+
+ /* 分页 */
+.block {
+margin-left: 880px;
+}
+/* .block .el-pagination{
+  } */
+.block .el-pagination .el-pagination__total {
+    margin-top: 6px;
+  }
+.block .el-pagination .el-pagination__jump {
+    margin-top: 6px;
+  }
+.block .el-pagination .btn-prev {
+    width: 40px;
+    height: 40px;
+    border: 1px solid #d7d7d7;
+    border-radius: 4px;
+}
+.block .el-pagination .btn-next {
+    width: 40px;
+    height: 40px;
+    border: 1px solid #d7d7d7;
+    border-radius: 4px;
+}
+.block .el-pagination .el-pager .number{
+      width: 40px;
+      height: 40px;
+      border: 1px solid #d7d7d7;
+      border-radius: 4px;
+      margin-left: 10px;
+      line-height: 40px;
+}
+.block .el-pagination  .el-pager :last-child {
+    margin-right: 10px;
+}
+/* 遮罩层 */
+.zhe {
+position: absolute;
+top: 119px;
+left: 0;
+//width: 1920px;
+width: 100%;
+height: 961px;
+/*
+   设置父元素opacity：0.5，子元素不设置opacity，子元素会受到父元素opacity的影响，也会有0.5的透明度。
+   即使设置子元素opacity：1，子元素的opacity：1 也是在父元素的opacity：0.5的基础上设置的，因此子元素的opacity还是0.5。
+*/
+background: rgba(0, 0, 0, 0.3);
+z-index: 2;
+}
+.el-table__cell {
+margin: 0px;
+padding: 0px;
+height: 57px;
+}
+.el-table__row {
+height: 57px;
+}
+.form-shade {
+width: 1104px;
+height: 652px;
+background: #fff;
+border-radius: 10px;
+margin-left: -500px;
+margin-top: 68px;
+.form-shade-top {
+  width: 1104px;
+  height: 60px;
+  background: #6e96e9;
+  border-radius: 10px 10px 0px 0px;
+  .close {
+    width: 19px;
+    height: 20px;
+    font-size: 30px;
+    font-family: Source Han Sans CN;
+    font-weight: 500;
+    color: #ffffff;
+    margin-left: 1055px;
+    padding-top: 10px;
+    cursor: pointer; //鼠标变为手
+  }
+}
+.form-shade-bottom {
+  .list {
+    width: 110px;
+    height: 18px;
+    font-size: 18px;
+    font-family: Source Han Sans CN;
+    font-weight: 500;
+    color: #333333;
+    margin-left: 498px;
+    margin-top: 29px;
+  }
+  .list-one {
+    width: 96px;
+    height: 16px;
+    font-size: 16px;
+    font-family: "Source Han Sans CN";
+    font-weight: 500;
+    color: #333333;
+    margin-left: 117px;
+    margin-top: 29px;
+  }
+  .but {
+    width: 400px;
+    height: 50px;
+    border-radius: 3px;
+    background: #6e96e9;
+    color: #fff;
+    margin-left: 352px;
+    margin-top: 40px;
+  }
+}
+.el-row {
+  padding-left: 105px;
+}
+}
+
+.el-button {
+background: #6e96e9;
+color: #fff;
+}
+.el-upload{
+width: 136px;
+height: 42px;
+background: #6E96E9;
+border-radius: 3px;
+}
